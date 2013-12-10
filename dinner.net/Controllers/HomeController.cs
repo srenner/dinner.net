@@ -15,14 +15,14 @@ namespace dinner.net.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "dinner.net is my example project to learn ASP.NET MVC";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Looking to add a new software developer to your team?";
 
             return View();
         }

@@ -8,12 +8,13 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using dinner.net.Models;
+using dinner.net.DAL;
 
 namespace dinner.net.Controllers
 {
     public class IngredientController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private DinnerContext db = new DinnerContext();
 
         // GET: /Ingredient/
         public async Task<ActionResult> Index()

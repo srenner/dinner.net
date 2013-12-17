@@ -13,5 +13,7 @@ namespace dinner.net.Models
             : base("DefaultConnection")
         {
         }
+
+        public System.Data.Entity.DbSet<dinner.net.Models.Ingredient> Ingredients { get; set; }
     }
 }

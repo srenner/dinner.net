@@ -12,6 +12,7 @@ namespace dinner.net.Models
         [Required]
         [MaxLength(100)]
         public string Name { get; set; }
+        [Display(Name="Extended Description")]
         public string ExtendedDescription { get; set; }
     }
 }

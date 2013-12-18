@@ -18,7 +18,7 @@ namespace dinner.net.Migrations
         {
             context.Ingredients.AddOrUpdate(
                 new Ingredient { Name = "Onion" },
-                new Ingredient { Name = "15oz can tomato sauce"}
+                new Ingredient { Name = "Large can tomato sauce", ExtendedDescription = "15oz"}
             );
 
 

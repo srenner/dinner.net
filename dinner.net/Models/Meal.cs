@@ -25,6 +25,7 @@ namespace dinner.net.Models
         [Display(Name = "Rating 1-10")]
         public int Rating { get; set; }
         
+        [Display(Name = "Last Ate")]
         public DateTime LastAte { get; set; }
 
         public override string ToString()

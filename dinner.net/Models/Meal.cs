@@ -26,5 +26,10 @@ namespace dinner.net.Models
         public int Rating { get; set; }
         
         public DateTime LastAte { get; set; }
+
+        public override string ToString()
+        {
+            return "[Meal] " + this.Name;
+        }
     }
 }

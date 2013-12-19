@@ -21,5 +21,11 @@ namespace dinner.net.Models
         public string ExtendedDescription { get; set; }
 
         public virtual ICollection<MealIngredient> MealIngredients { get; set; }
+
+
+        public override string ToString()
+        {
+            return "[Ingredient] " + this.Name;
+        }
     }
 }

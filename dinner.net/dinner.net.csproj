@@ -176,6 +176,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IngredientController.cs" />
+    <Compile Include="Controllers\MealController.cs" />
     <Compile Include="DAL\DinnerContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -183,6 +184,10 @@
     <Compile Include="Migrations\201312181748317_Init.cs" />
     <Compile Include="Migrations\201312181748317_Init.Designer.cs">
       <DependentUpon>201312181748317_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201312191838021_RelationshipTest.cs" />
+    <Compile Include="Migrations\201312191838021_RelationshipTest.Designer.cs">
+      <DependentUpon>201312191838021_RelationshipTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -244,6 +249,11 @@
     <Content Include="Views\Ingredient\Details.cshtml" />
     <Content Include="Views\Ingredient\Edit.cshtml" />
     <Content Include="Views\Ingredient\Index.cshtml" />
+    <Content Include="Views\Meal\Create.cshtml" />
+    <Content Include="Views\Meal\Delete.cshtml" />
+    <Content Include="Views\Meal\Details.cshtml" />
+    <Content Include="Views\Meal\Edit.cshtml" />
+    <Content Include="Views\Meal\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -258,6 +268,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201312181748317_Init.resx">
       <DependentUpon>201312181748317_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201312191838021_RelationshipTest.resx">
+      <DependentUpon>201312191838021_RelationshipTest.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

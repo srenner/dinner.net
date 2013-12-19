@@ -9,9 +9,14 @@ namespace dinner.net.Models
     {
         public int ID { get; set; }
 
-        public Meal Meal { get; set; }
-        public Ingredient Ingredient { get; set; }
+        public int MealID { get; set; }
+        public int IngredientID { get; set; }
+
         public int Quantity { get; set; }
         public string QuantityDescription { get; set; }
+
+        public virtual Ingredient Ingredient { get; set; }
+        public virtual Meal Meal { get; set; }
+
     }
 }

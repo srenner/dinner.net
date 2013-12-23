@@ -26,7 +26,7 @@
                     <li>@Html.ActionLink("Ingredients", "Index", "Ingredient")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                @Html.Partial("_LoginPartial") 
             </div>
         </div>
     </div>
@@ -39,6 +39,7 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    @Styles.Render("~/Content/pepper-grinder")
     @Scripts.Render("~/bundles/jquery-ui")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

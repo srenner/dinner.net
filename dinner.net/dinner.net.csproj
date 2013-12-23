@@ -177,6 +177,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IngredientController.cs" />
     <Compile Include="Controllers\MealController.cs" />
+    <Compile Include="Controllers\MealIngredientController.cs" />
     <Compile Include="DAL\DinnerContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -254,6 +255,11 @@
     <Content Include="Views\Meal\Details.cshtml" />
     <Content Include="Views\Meal\Edit.cshtml" />
     <Content Include="Views\Meal\Index.cshtml" />
+    <Content Include="Views\MealIngredient\Create.cshtml" />
+    <Content Include="Views\MealIngredient\Delete.cshtml" />
+    <Content Include="Views\MealIngredient\Details.cshtml" />
+    <Content Include="Views\MealIngredient\Edit.cshtml" />
+    <Content Include="Views\MealIngredient\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

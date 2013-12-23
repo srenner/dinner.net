@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - dinner.net</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/pepper-grinder")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
@@ -37,9 +38,7 @@
             <p>&copy; @DateTime.Now.Year <a href="http://www.shawnrenner.com">shawn renner</a> - dinner.net</p>
         </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
-    @Styles.Render("~/Content/pepper-grinder")
     @Scripts.Render("~/bundles/jquery-ui")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

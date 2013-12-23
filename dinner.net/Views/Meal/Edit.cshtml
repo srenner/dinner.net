@@ -51,6 +51,14 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.Cost, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Cost)
+                @Html.ValidationMessageFor(model => model.Cost)
+            </div>
+        </div>
+
+        <div class="form-group">
             @Html.LabelFor(model => model.LastAte, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.LastAte)
@@ -63,12 +71,15 @@
             @Html.LabelFor(model => model.Ingredients, new { @class = "control-label col-md-2" })
 
             <div class="col-md-10">
-                @foreach (var item in Model.Ingredients)
-            {
-                    @Html.EditorFor(model => item.Quantity)
-                    @Html.EditorFor(model => item.Ingredient.Name)
-                    <br />
-            }
+                @if(Model.Ingredients != null)
+                {
+                    foreach (var item in Model.Ingredients)
+                    {
+                        @Html.EditorFor(model => item.Quantity)
+                        @Html.EditorFor(model => item.Ingredient.Name)
+                        <br />
+                    }
+                }
             </div>
         </div>
 

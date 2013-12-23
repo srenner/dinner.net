@@ -23,8 +23,13 @@ namespace dinner.net.Models
         public string StepsToMake { get; set; }
 
         [Display(Name = "Rating 1-10")]
+        [Range(1,10)]
         public int Rating { get; set; }
-        
+
+        [Display(Name = "Cost 1-4")]
+        [Range(1, 4)]
+        public int Cost { get; set; }
+
         [Display(Name = "Last Ate")]
         public DateTime LastAte { get; set; }
 

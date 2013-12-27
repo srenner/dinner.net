@@ -22,12 +22,12 @@ namespace dinner.net.Models
         [Display(Name = "Steps to make")]
         public string StepsToMake { get; set; }
 
-        [Display(Name = "Rating 1-10")]
+        [Display(Name = "Rating (1-10)")]
         [Range(1,10)]
         [UIHint("StarRating")]
         public int Rating { get; set; }
 
-        [Display(Name = "Cost 1-4")]
+        [Display(Name = "Cost (1-4)")]
         [Range(1, 4)]
         [UIHint("CostRating")]
         public int Cost { get; set; }

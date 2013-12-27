@@ -299,10 +299,10 @@
     <Content Include="Views\MealIngredient\Edit.cshtml" />
     <Content Include="Views\MealIngredient\Index.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\StarRating.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Shared\DisplayTemplates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

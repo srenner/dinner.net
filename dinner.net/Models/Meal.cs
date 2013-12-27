@@ -24,6 +24,7 @@ namespace dinner.net.Models
 
         [Display(Name = "Rating 1-10")]
         [Range(1,10)]
+        [UIHint("StarRating")]
         public int Rating { get; set; }
 
         [Display(Name = "Cost 1-4")]

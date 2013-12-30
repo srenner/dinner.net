@@ -16,10 +16,10 @@ namespace dinner.net.Migrations
 
         protected override void Seed(dinner.net.DAL.DinnerContext context)
         {
-            context.Ingredients.AddOrUpdate(
-                new Ingredient { Name = "Onion" },
-                new Ingredient { Name = "Large can tomato sauce", ExtendedDescription = "15oz"}
-            );
+            //context.Ingredients.AddOrUpdate(
+            //    new Ingredient { Name = "Onion" },
+            //    new Ingredient { Name = "Large can tomato sauce", ExtendedDescription = "15oz"}
+            //);
 
 
 

@@ -20,6 +20,9 @@ namespace dinner.net.Models
         [Display(Name="Extended Description")]
         public string ExtendedDescription { get; set; }
 
+        [Display(Name="Quantity on Hand")]
+        public int? QuantityOnHand { get; set; }
+
         public virtual ICollection<MealIngredient> MealIngredients { get; set; }
 
 

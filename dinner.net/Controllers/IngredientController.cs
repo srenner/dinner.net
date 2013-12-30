@@ -117,6 +117,22 @@ namespace dinner.net.Controllers
             return RedirectToAction("Index");
         }
 
+        // POST: /Ingredient/ChangeQuantity/5
+        [HttpPost]
+        public int ChangeQuantity(int? id, int amount)
+        {
+            Ingredient ingredient = db.Ingredients.Find(id);
+            int oldQuantity = ingredient.QuantityOnHand.HasValue ? (int)ingredient.QuantityOnHand : 0;
+            int newQuantity = oldQuantity;
+            if (!(amount < 0 && oldQuantity < 1))
+            {
+                newQuantity += amount;
+                ingredient.QuantityOnHand = newQuantity;
+                db.SaveChanges();
+            } // else: the action would make the quantity negative, so do nothing
+            return newQuantity;
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

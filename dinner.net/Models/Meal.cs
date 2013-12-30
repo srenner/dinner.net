@@ -34,7 +34,7 @@ namespace dinner.net.Models
 
         [Display(Name = "Last Ate")]
         [DisplayFormat(DataFormatString="{0:MM/dd/yyyy}")]
-        public DateTime LastAte { get; set; }
+        public DateTime? LastAte { get; set; }
 
         public override string ToString()
         {

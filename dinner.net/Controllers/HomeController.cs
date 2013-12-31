@@ -1,4 +1,7 @@
-﻿using System;
+﻿using dinner.net.DAL;
+using dinner.net.Models;
+using dinner.net.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +13,14 @@ namespace dinner.net.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            List<Meal> allMeals;
+            List<Meal> recentMeals;
+            using (var context = new DinnerContext())
+            {
+                allMeals = context.Meals.OrderBy(x => x.Name).ToList();
+                recentMeals = context.Meals.OrderByDescending(x => x.LastAte).Take(5).ToList();
+            }
+            return View(new HomeView() { AllMeals = allMeals, RecentMeals = recentMeals });
         }
 
         public ActionResult About()

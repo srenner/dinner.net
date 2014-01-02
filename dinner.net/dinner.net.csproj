@@ -182,19 +182,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201312181748317_Init.cs" />
-    <Compile Include="Migrations\201312181748317_Init.Designer.cs">
-      <DependentUpon>201312181748317_Init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201312191838021_RelationshipTest.cs" />
-    <Compile Include="Migrations\201312191838021_RelationshipTest.Designer.cs">
-      <DependentUpon>201312191838021_RelationshipTest.cs</DependentUpon>
+    <Compile Include="Migrations\201401022101568_MealHistory.cs" />
+    <Compile Include="Migrations\201401022101568_MealHistory.Designer.cs">
+      <DependentUpon>201401022101568_MealHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Ingredient.cs" />
     <Compile Include="Models\Meal.cs" />
+    <Compile Include="Models\MealHistory.cs" />
     <Compile Include="Models\MealIngredient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -317,11 +314,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201312181748317_Init.resx">
-      <DependentUpon>201312181748317_Init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201312191838021_RelationshipTest.resx">
-      <DependentUpon>201312191838021_RelationshipTest.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201401022101568_MealHistory.resx">
+      <DependentUpon>201401022101568_MealHistory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

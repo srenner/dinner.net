@@ -19,6 +19,8 @@ namespace dinner.net.Models
 
         public virtual ICollection<MealIngredient> Ingredients { get; set; }
 
+        public virtual ICollection<MealHistory> History { get; set; }
+
         [Display(Name = "Steps to make")]
         public string StepsToMake { get; set; }
 

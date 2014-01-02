@@ -7,13 +7,13 @@ namespace dinner.net.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.0.1-21010")]
-    public sealed partial class Init : IMigrationMetadata
+    public sealed partial class MealHistory : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Init));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(MealHistory));
         
         string IMigrationMetadata.Id
         {
-            get { return "201312181748317_Init"; }
+            get { return "201401022101568_MealHistory"; }
         }
         
         string IMigrationMetadata.Source

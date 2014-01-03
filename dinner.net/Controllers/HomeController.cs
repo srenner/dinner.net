@@ -14,13 +14,11 @@ namespace dinner.net.Controllers
         public ActionResult Index()
         {
             List<Meal> allMeals;
-            List<Meal> recentMeals;
             using (var context = new DinnerContext())
             {
                 allMeals = context.Meals.OrderBy(x => x.Name).ToList();
-                recentMeals = context.Meals.OrderByDescending(x => x.LastAte).Take(5).ToList();
             }
-            return View(new HomeView() { AllMeals = allMeals, RecentMeals = recentMeals });
+            return View(new HomeView() { AllMeals = allMeals });
         }
 
         public ActionResult About()

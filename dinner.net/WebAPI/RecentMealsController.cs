@@ -20,15 +20,7 @@ namespace dinner.net.WebAPI
                 context.Configuration.LazyLoadingEnabled = false;
                 recentMeals = context.Meals.OrderByDescending(x => x.LastAte).Take(5).ToList();
             }
-
             return recentMeals;
-            //List<Meal> recentMeals;
-
-            //using (var context = new DinnerContext())
-            //{
-            //    recentMeals = context.Meals.OrderByDescending(x => x.LastAte).Take(5).ToList();
-            //}
-            //return recentMeals;
         }
 
         // GET api/<controller>/5

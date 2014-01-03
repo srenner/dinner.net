@@ -9,6 +9,5 @@ namespace dinner.net.ViewModels
     public class HomeView
     {
         public List<Meal> AllMeals { get; set; }
-        public List<Meal> RecentMeals { get; set; }
     }
 }

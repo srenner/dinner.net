@@ -25,5 +25,7 @@ namespace dinner.net.DAL
         public System.Data.Entity.DbSet<dinner.net.Models.Meal> Meals { get; set; }
 
         public System.Data.Entity.DbSet<dinner.net.Models.MealIngredient> MealIngredients { get; set; }
+
+        public System.Data.Entity.DbSet<dinner.net.Models.MealHistory> MealHistory { get; set; }
     }
 }

@@ -9,26 +9,22 @@
         dinner.net is a small project I started to learn ASP.NET MVC. 
         It will be used to keep a database of meals and help decide what to eat.
     </p>
-
 </div>
 
 <div class="row">
     <div class="col-md-6">
         <h2>Recent Meals</h2>
-        <ul>
-            @foreach(var rm in Model.RecentMeals)
-            {
-                <li>@rm.Name - @(rm.LastAte.HasValue ? ((DateTime)rm.LastAte).ToString("MM/dd/yyyy") : "(date unknown)") </li>
-            }
+        <ul id="list-recent">
         </ul>
         <div>
-            <select>
+            <select id="ddl-meal-history">
                 @foreach (var meal in Model.AllMeals)
                 {
-                    <option>@meal.Name</option>
+                    <option value="@meal.ID">@meal.Name</option>
                 }
             </select>
-            <input type="text" class="datepicker" />
+            <input type="text" id="txt-meal-date" class="datepicker" />
+            <input type="button" value="Add History" onclick="addHistory()" />
         </div>
     </div>
     <div class="col-md-6">
@@ -38,9 +34,5 @@
 </div>
 
 @section Scripts {
-    <script type="text/javascript">
-        $(function () {
-            $(".datepicker").datepicker();
-        });
-    </script>
+    <script src="~/Scripts/Views/Home/index.js"></script>
 }

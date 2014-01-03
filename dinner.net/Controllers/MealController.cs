@@ -117,6 +117,22 @@ namespace dinner.net.Controllers
             return RedirectToAction("Index");
         }
 
+        // POST: /Meal/AddHistory/5
+        [HttpPost]
+        public void AddHistory(int id, DateTime dateAte)
+        {
+            Meal meal = db.Meals.Find(id);
+            meal.LastAte = dateAte;
+
+            MealHistory history = new MealHistory();
+            history.MealID = id;
+            history.DateAte = dateAte;
+            db.MealHistory.Add(history);
+
+            db.SaveChanges();
+
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

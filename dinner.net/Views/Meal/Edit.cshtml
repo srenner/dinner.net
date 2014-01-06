@@ -59,13 +59,20 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.Effort, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Effort)
+                @Html.ValidationMessageFor(model => model.Effort)
+            </div>
+        </div>
+
+        <div class="form-group">
             @Html.LabelFor(model => model.LastAte, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.LastAte)
                 @Html.ValidationMessageFor(model => model.LastAte)
             </div>
         </div>
-
 
         <div class="form-group">
             @Html.LabelFor(model => model.Ingredients, new { @class = "control-label col-md-2" })

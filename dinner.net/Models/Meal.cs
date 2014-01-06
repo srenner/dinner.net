@@ -34,6 +34,10 @@ namespace dinner.net.Models
         [UIHint("CostRating")]
         public int Cost { get; set; }
 
+        [Display(Name = "Effort to make (1-4)")]
+        [Range(1, 4)]
+        public int? Effort { get; set; }
+
         [Display(Name = "Last Ate")]
         [DisplayFormat(DataFormatString="{0:MM/dd/yyyy}")]
         public DateTime? LastAte { get; set; }

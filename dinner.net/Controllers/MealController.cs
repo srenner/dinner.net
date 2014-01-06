@@ -48,7 +48,7 @@ namespace dinner.net.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include="ID,Name,ExtendedDescription,StepsToMake,Rating,Cost,LastAte")] Meal meal)
+        public async Task<ActionResult> Create([Bind(Include="ID,Name,ExtendedDescription,StepsToMake,Rating,Cost,Effort, LastAte")] Meal meal)
         {
             if (ModelState.IsValid)
             {
@@ -80,7 +80,7 @@ namespace dinner.net.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include="ID,Name,ExtendedDescription,StepsToMake,Rating,LastAte,Ingredients")] Meal meal)
+        public async Task<ActionResult> Edit([Bind(Include="ID,Name,ExtendedDescription,StepsToMake,Rating,Cost,Effort,LastAte,Ingredients")] Meal meal)
         {
             if (ModelState.IsValid)
             {

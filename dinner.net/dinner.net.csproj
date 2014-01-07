@@ -185,6 +185,10 @@
     <Compile Include="Migrations\201401022101568_MealHistory.Designer.cs">
       <DependentUpon>201401022101568_MealHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201401072117227_EffortRequired.cs" />
+    <Compile Include="Migrations\201401072117227_EffortRequired.Designer.cs">
+      <DependentUpon>201401072117227_EffortRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -207,6 +211,10 @@
     <Content Include="Content\Images\cost-02.png" />
     <Content Include="Content\Images\cost-03.png" />
     <Content Include="Content\Images\cost-04.png" />
+    <Content Include="Content\Images\effort-01.png" />
+    <Content Include="Content\Images\effort-02.png" />
+    <Content Include="Content\Images\effort-03.png" />
+    <Content Include="Content\Images\effort-04.png" />
     <Content Include="Content\Images\money-dollar-gray.png" />
     <Content Include="Content\Images\money-dollar.png" />
     <Content Include="Content\Images\star-01.png" />
@@ -304,6 +312,7 @@
     <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\StarRating.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\CostRating.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\EffortRating.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -318,6 +327,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201401022101568_MealHistory.resx">
       <DependentUpon>201401022101568_MealHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201401072117227_EffortRequired.resx">
+      <DependentUpon>201401072117227_EffortRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

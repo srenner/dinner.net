@@ -36,7 +36,8 @@ namespace dinner.net.Models
 
         [Display(Name = "Effort to make (1-4)")]
         [Range(1, 4)]
-        public int? Effort { get; set; }
+        [UIHint("EffortRating")]
+        public int Effort { get; set; }
 
         [Display(Name = "Last Ate")]
         [DisplayFormat(DataFormatString="{0:MM/dd/yyyy}")]
